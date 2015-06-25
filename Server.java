@@ -1,5 +1,3 @@
-package server;
-
 import java.net.*;
 import java.util.*;
 import java.io.*;
@@ -23,7 +21,7 @@ public class Server {
 			} 
 		} catch (IOException exception) {
 				System.out.println("Error" + exception);
-			}
+		}
 		
 	}
 
