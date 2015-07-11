@@ -33,6 +33,7 @@ public class Server extends JFrame {
 				Socket socket = connectSocket.accept();
 				ClientThread clientThread = new ClientThread(socket);
 				new Thread(clientThread).start();
+				connectSocket.close();
 			} 
 		} catch (IOException exception) {
 				System.out.println("Error" + exception);
